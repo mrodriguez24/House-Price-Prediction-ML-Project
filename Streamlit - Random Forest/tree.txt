@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="sqft_living <= 3173.0\nmse = 132070533329.02\nsamples = 10920\nvalue = 536393.13", fillcolor="#fdf7f3"] ;
+1 [label="sqft_living <= 2158.0\nmse = 49641876739.63\nsamples = 9693\nvalue = 465830.34", fillcolor="#fef9f5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sqft_living <= 1455.0\nmse = 26462341455.75\nsamples = 6661\nvalue = 397908.45", fillcolor="#fefaf7"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+5700 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 5700 ;
+13009 [label="sqft_living <= 2745.0\nmse = 68173840326.47\nsamples = 3032\nvalue = 614647.81", fillcolor="#fdf6f1"] ;
+1 -> 13009 ;
+13010 [label="(...)", fillcolor="#C0C0C0"] ;
+13009 -> 13010 ;
+17143 [label="(...)", fillcolor="#C0C0C0"] ;
+13009 -> 17143 ;
+18964 [label="sqft_living <= 7930.0\nmse = 432511760501.62\nsamples = 1227\nvalue = 1112375.42", fillcolor="#fbeee4"] ;
+0 -> 18964 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+18965 [label="sqft_living <= 4065.0\nmse = 331656720990.35\nsamples = 1223\nvalue = 1092652.91", fillcolor="#fceee5"] ;
+18964 -> 18965 ;
+18966 [label="(...)", fillcolor="#C0C0C0"] ;
+18965 -> 18966 ;
+20679 [label="(...)", fillcolor="#C0C0C0"] ;
+18965 -> 20679 ;
+21388 [label="bedrooms <= 5.5\nmse = 2571047070000.0\nsamples = 4\nvalue = 5744700.0", fillcolor="#eca16c"] ;
+18964 -> 21388 ;
+21389 [label="(...)", fillcolor="#C0C0C0"] ;
+21388 -> 21389 ;
+21394 [label="(...)", fillcolor="#C0C0C0"] ;
+21388 -> 21394 ;
+}

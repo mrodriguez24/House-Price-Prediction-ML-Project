@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns:  20%  41% 3% 14%  20%;
+    grid-template-rows: min-content auto min-content;
+}
+
+header, footer, lastrowspace, .any, heroku {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+iframe {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+qa {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
